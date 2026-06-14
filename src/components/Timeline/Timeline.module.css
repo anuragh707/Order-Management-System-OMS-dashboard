@@ -1,0 +1,116 @@
+.timelineCard {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 24px 20px;
+  margin-top: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.eventsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.timelineItem {
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+
+.indicatorColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 24px;
+}
+
+.iconCircle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ebf8ff;
+  border: 1px solid #bee3f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.docIcon {
+  color: var(--secondary-color);
+  font-size: 11px;
+}
+
+.dashedLine {
+  width: 0;
+  border-left: 2px dashed #cbd5e0;
+  flex-grow: 1;
+  margin: 4px 0;
+  min-height: 40px;
+}
+
+.contentColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 24px;
+  flex: 1;
+}
+
+/* Eliminate padding-bottom on the last item */
+.timelineItem:last-child .contentColumn {
+  padding-bottom: 0;
+}
+
+.statusHeader {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+}
+
+.statusText {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.pipe {
+  color: #cbd5e0;
+}
+
+.orderLink {
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.orderLink:hover {
+  color: #004b93;
+}
+
+.eventTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.timestamp {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  color: var(--text-secondary);
+}
+
+.loading {
+  padding: 20px;
+  text-align: center;
+  color: var(--text-secondary);
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin-top: 16px;
+}

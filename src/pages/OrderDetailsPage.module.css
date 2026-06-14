@@ -1,0 +1,209 @@
+.pageLayout {
+  padding-top: 120px; /* Account for fixed Navbar (50px) + OrderHeader (70px) */
+  padding-left: 60px; /* Account for fixed Sidebar (60px) */
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.contentContainer {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+  padding: 24px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* Prevents flex children from breaking parent layout */
+}
+
+/* Tabs Scroller & Container */
+.tabsScroller {
+  width: 100%;
+  overflow-x: auto;
+  background-color: transparent;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tabsScroller::-webkit-scrollbar {
+  height: 4px;
+}
+
+.tabsContainer {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 1px;
+}
+
+.tabBtn {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 10px 4px;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: all var(--transition-speed) ease;
+}
+
+.tabBtn:hover {
+  color: var(--text-primary);
+}
+
+.activeTab {
+  color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+}
+
+.tabContentPanel {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Loading & Error States */
+.loaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg-color);
+  gap: 16px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #cbd5e0;
+  border-top: 3px solid var(--secondary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loadingText {
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.errorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg-color);
+  padding: 20px;
+}
+
+.errorCard {
+  background-color: var(--card-bg);
+  border: 1px solid #fed7d7;
+  border-radius: 6px;
+  padding: 24px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.errorCard h3 {
+  color: #c53030;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.errorCard p {
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.retryBtn {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.retryBtn:hover {
+  background-color: #004b93;
+}
+
+/* Tab Placeholders styling */
+.placeholderTabContent {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 32px;
+  text-align: center;
+  color: var(--text-secondary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.placeholderTabContent h3 {
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.placeholderTabContent p {
+  font-size: 12px;
+  margin-bottom: 24px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.innerCardWrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.illustrationSquare {
+  width: 120px;
+  height: 120px;
+  border: 2px dashed #e2e8f0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: #cbd5e0;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .contentContainer {
+    grid-template-columns: 1fr;
+  }
+  
+  .pageLayout {
+    padding-left: 0; /* Slide sidebar or collapse on small screens */
+  }
+}
+
+@media (max-width: 640px) {
+  .contentContainer {
+    padding: 12px;
+  }
+}

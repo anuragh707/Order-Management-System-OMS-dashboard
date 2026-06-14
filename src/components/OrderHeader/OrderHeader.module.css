@@ -1,0 +1,185 @@
+.headerContainer {
+  position: fixed;
+  top: 50px;
+  left: 60px;
+  right: 0;
+  height: 70px;
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  z-index: 80;
+}
+
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.breadcrumbs {
+  font-size: 11px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.separator {
+  color: #cbd5e0;
+}
+
+.inactiveBreadcrumb {
+  color: var(--text-secondary);
+}
+
+.doubleChevron {
+  color: #a0aec0;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.activeBreadcrumb {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #00b050; /* Green color match */
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.iconButton {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-secondary);
+  background-color: var(--card-bg);
+  font-size: 14px;
+}
+
+.iconButton:hover {
+  background-color: #f7fafc;
+  color: var(--text-primary);
+  border-color: #cbd5e0;
+}
+
+.dropdownWrapper {
+  position: relative;
+}
+
+.statusDropdown {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  color: var(--text-primary);
+  background-color: var(--card-bg);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.statusDropdown:hover {
+  background-color: #f7fafc;
+  border-color: #a0aec0;
+}
+
+.dropdownIcon {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.actionButton {
+  height: 32px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.actionButton:hover {
+  background-color: #173d66;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.plusSign {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 8px;
+  padding-left: 8px;
+  border-left: 1px solid var(--border-color);
+}
+
+.navBtn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--card-bg);
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.navBtn:hover {
+  background-color: #f7fafc;
+  color: var(--text-primary);
+  border-color: #cbd5e0;
+}
