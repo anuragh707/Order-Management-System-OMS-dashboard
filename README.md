@@ -4,6 +4,24 @@ A production-quality React 18+ and Vite application replicating the Aludecor Ord
 
 ---
 
+## 📸 Screenshots
+
+Here is a visual overview of the dashboard's user interface:
+
+### Order Details View (Details Tab)
+![Order Details View](screenshots/order_details.png)
+
+### Interactive Timeline (Timeline Tab)
+![Interactive Timeline Details](screenshots/timeline.png)
+
+### Order Breakdown & Customer details (Scrolled View)
+![Order Breakdown & Customer Details](screenshots/order_breakdown.png)
+
+### Interactive API Design & Distribution (API Design Tab)
+![Interactive API Design & Distribution](screenshots/api_design.png)
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
